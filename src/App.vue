@@ -96,7 +96,7 @@
 
             if (this.todoInput.trim() === "") return;
 
-            this.activeTodo.push({ "todoItem" : this.todoInput, "done": false });
+            this.activeTodo.push({ "todoItem" : this.todoInput });
             this.todoInput = "";
             localStorage.setItem("activeTodo", JSON.stringify(this.activeTodo))
         },
