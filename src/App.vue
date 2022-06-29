@@ -16,7 +16,7 @@
             <div class="add-todo">
                 <h2>Add New</h2>
                 <div class="add-todo-field">
-                    <input type="text" v-model="todoInput" @keypress.enter="addNewActive" placeholder="What needs to be done?">
+                    <input @keypress.enter="addNewActive" type="text" v-model="todoInput" placeholder="What needs to be done?">
                     <button class="add-button" @click.prevent="addNewActive"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
